@@ -23,7 +23,7 @@ El
 
 - Requerimientos: 
 
-	- Una app confliable donde aficionados al futbol puedan realizar apuestas respecto a los enfrentamientos del torneo. 	
+	- Una app confiable donde aficionados al futbol puedan realizar apuestas respecto a los enfrentamientos del torneo. 	
 	- Intezfaz intuitiva y de flujo sencillo, navegación por tabs. 
 	- Espacio para visualizar partidos, fecha y lugares, que este dividido entre los grupos de clasificación y las etapas del torneo. 
 	- Sección para ver "Mis apuestas"
@@ -76,6 +76,9 @@ Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)
 ## <a name="sketching"></a> Sketching ##
 1.  <a name="sketch-login"></a>**Sketch Login**
     - <img src=assets/images/Sketches/sketch-login.png>
+
+2.  <a name="sketch-login"></a>**Sketch Feed**
+    - <img src=assets/images/Sketches/sketch-feed.png>
 
 ## <a name="wireframes"></a> Vistas wireframes Definitivos
 - <a name="login"></a>**Login**
