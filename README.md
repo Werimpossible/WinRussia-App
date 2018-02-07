@@ -44,7 +44,7 @@ Se utilizó plataforma de Trello para realizar la organización de tiempos y act
 
 Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
 
-[TrelloView](/assets/images/trello.png)
+![TrelloView](/assets/images/trello.png)
 
 Atenidendo a las fortalezas de cada una se realizó la siguiente división de trabajo:
 
