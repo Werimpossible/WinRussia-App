@@ -1,1 +1,35 @@
+body{
+  background-color: #bf161b;
+}
 
+#splash{
+  height: 90vh;
+  width: 70vw;
+  margin: auto;
+  margin-top: 35%;
+}
+
+#main{
+  margin: auto;
+  height: 100vh;
+  width: 70vw;
+  margin-top: 20%;
+}
+.input-field{
+  color: #FFF;
+}
+.btn-access{
+  width: 100%;
+  height: 5vh;
+  box-shadow: 3px 3px #ede8e8;
+  background-color: #FFF;
+  border: solid 3px #f44447;
+  border-radius: 1vh;
+}
+
+.account{
+  margin-top: 5vh;
+}
+.account > a{
+  color: #FFF;
+}
