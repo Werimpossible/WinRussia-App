@@ -1,4 +1,10 @@
 function loadPage(){
+
+  $('ul.tabs').tabs('select_tab', 'tab_id');
+  $(".button-collapse").sideNav();
+  $('.collapsible').collapsible();
+
+  
   splash()
 
   // Initialize Firebase
@@ -60,4 +66,3 @@ function splash() {
 }
 
 $(document).ready(loadPage);
-
