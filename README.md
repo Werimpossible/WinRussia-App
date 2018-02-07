@@ -4,7 +4,8 @@
 
 ## Tabla de Contenido
 1. [Descripción](#descripcion)
-2. [Sketching de Vistas](#sketching)
+2. [Planeación](#planeacion)
+3. [Sketching de Vistas](#sketching)
     1. [Login](#sketch-login)
 4. [Vistas wireframes](#wireframes)
     1. [Login](#login)
@@ -16,6 +17,13 @@
 - Versión 1.0:
     - Aplicación móvil.
     - WINRUSSIA es una aplicación móvil centrada en vivir la experiencias del mundial Rusia 2018 d
+
+
+## <a name="planeacion"></a> Planeación: 
+
+Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades
+
+Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
 
 ## <a name="sketching"></a> Sketching ##
 1.  <a name="sketch-login"></a>**Sketch Login**
@@ -31,3 +39,5 @@
 
 ### <a name="pseudo"></a> Pseudocódigo:
 <img src=assets/images/----------------->
+
+
