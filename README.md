@@ -13,9 +13,9 @@
     1. [Pseudocodigo](#pseudo)
 
 
-## <a name="descripcion"></a> Descripción: ##
+## <a name="descripcion"></a> Descripción:
 
-El 
+Realizando un sondeo entre conocidos y amigos notamos que una forma a la que las personas más recurren para esparcimiento es el uso de aplicaciones móviles, los deportes y las apuestas. Por lo que surgió la idea de conjuntar estas 3 opciones en un producto: WinRussia, como una alternativa de producto digital innovador y entretenido. Una aplicación móvil para realizar apuestas sobre los partidos que se disputarán en la siguiente copa mundial de fútbol.  
 
 - Versión 1.0:
 
@@ -37,49 +37,62 @@ El
     - Uso de APIs.
     - Git colaborativo. 
 
+
+## <a name="planeacion"></a> Planeación: 
+
+Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades. 
+
+Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
+
+[TrelloView](/assets/images/trello.png)
+
+Atenidendo a las fortalezas de cada una se realizó la siguiente división de trabajo:
+
+* UX Desing: Ana Laura y Andrea 
+* Front-End: Lili y Jimena
+
+Sin embargo cabe aclarar que todas hemos contribuido de una u otra forma todas las tareas. 
+
+## <a name="sketching"></a> Sketching ##
+
 - Views: 
 
 	- Splash.
 	- Inicio de sesión.
+
+1.  <a name="sketch-login"></a>**Sketch Login**
+    <img src=assets/images/Sketches/sketch-login.png>
+
 	- Sección principal con menú deslizable de tabs: 
 		- Partidos:
 			- Esta sección cuenta de un menú fijo del lado izquierdo con los grupos y las etapas de avance del torneo. 
 			- En el espacio designado podemos visualizar los partidos del grupo o etapa seleccionado. 
-			- Al pulsar en el partido seleccionado, se despliega un toggle con la innformación del partido (Estadio/Ciudad/Fecha/hora) y además cuenta ocn un input para ingreso de monto a apostar, boton de CTA para fijar la apuesta.   
+			- Al pulsar en el partido seleccionado, se despliega un toggle con la innformación del partido (Estadio/Ciudad/Fecha/hora) y además cuenta ocn un input para ingreso de monto a apostar, botón de CTA para fijar la apuesta.   
 		- Mis apuestas: 
 			- En este apartado se muestran las últimas apuestas realizadas y sus resultados. 
-		- Estadísticas. 
+		- Estadísticas (API datos mundial pasado). 
 		- Pulpo Paul: 
-			- Se ingresan los datos de un partido, pulsar el boton de envío se despliega un gif con el resultado.  
-
-	-Mennú desplegable: 
-		- Perfil 
-		- Configuración
+			- Se ingresan los datos de un partido, pulsar el boton de envío se despliega un gif con el resultado (ÄPI de juego YES/NO/MAYBE).  
+	-Menú desplegable: 
+		- Perfil. 
+		- Configuración.
 		- Datos de pago. 
-			- Formulario de datos requeridos
-			- Validación.
+			- Formulario de datos requeridos.
+			- Validación (API Visa).
 			- Una vez validados los datos del usuario se guardan y se muestran, atendiendo a medidas de seguridad. 
-
 		- Ayuda: 
-			- Un encabezado de preguntas frecuentes, preguntas frecuentes y sus respuestas, encabezado de Contacto, datos de contacto. 
-
+			- Un encabezado de preguntas frecuentes, preguntas frecuentes y sus respuestas, encabezado de Contacto, datos de contacto.
 		- Términos y condiciones.
 		- Logout.
 
 
-## <a name="planeacion"></a> Planeación: 
 
-Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades
 
-Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
 
-## <a name="sketching"></a> Sketching ##
-1.  <a name="sketch-login"></a>**Sketch Login**
-    - <img src=assets/images/Sketches/sketch-login.png>
 
 ## <a name="wireframes"></a> Vistas wireframes Definitivos
 - <a name="login"></a>**Login**
-    - <img src=assets/images/------------->
+    - <img src=assets/images/---->
 
 ## <a name="funciones"></a> Funciones Técnicas <a name="funciones"></a>
 - Descripción de lo utilizado:
