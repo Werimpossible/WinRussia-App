@@ -1,4 +1,4 @@
-# WINRUSSIA # 
+# WinRussia # 
 ### Versión 1.0
 
 
@@ -14,9 +14,57 @@
 
 
 ## <a name="descripcion"></a> Descripción: ##
+
+El 
+
 - Versión 1.0:
-    - Aplicación móvil.
-    - WINRUSSIA es una aplicación móvil centrada en vivir la experiencias del mundial Rusia 2018 d
+
+    - WinRussia es una aplicación móvil de apuestas sobre el Mundial de Rusia 2018. 
+
+- Requerimientos: 
+
+	- Una app confliable donde aficionados al futbol puedan realizar apuestas respecto a los enfrentamientos del torneo. 	
+	- Intezfaz intuitiva y de flujo sencillo, navegación por tabs. 
+	- Espacio para visualizar partidos, fecha y lugares, que este dividido entre los grupos de clasificación y las etapas del torneo. 
+	- Sección para ver "Mis apuestas"
+	- Sección para verificar estadísticas de partidos y jugadores. 
+	- Un lugar de pronosticos aleatorios para hacer más divertida la app (Pulpo Paul). 
+	- Sección para configuracion de preferencias de la app y el perfil. 
+	- Un lugar para validación de dato de TDC. 
+	- Términos y condiciones. 
+    - Navegación complementaria a modo de tutorial para entender el uso de la app.
+    - Acceso a la app a través de Google y/o Facebook.   
+    - Uso de APIs.
+    - Git colaborativo. 
+
+- Views: 
+
+	- Splash.
+	- Inicio de sesión.
+	- Sección principal con menú deslizable de tabs: 
+		- Partidos:
+			- Esta sección cuenta de un menú fijo del lado izquierdo con los grupos y las etapas de avance del torneo. 
+			- En el espacio designado podemos visualizar los partidos del grupo o etapa seleccionado. 
+			- Al pulsar en el partido seleccionado, se despliega un toggle con la innformación del partido (Estadio/Ciudad/Fecha/hora) y además cuenta ocn un input para ingreso de monto a apostar, boton de CTA para fijar la apuesta.   
+		- Mis apuestas: 
+			- En este apartado se muestran las últimas apuestas realizadas y sus resultados. 
+		- Estadísticas. 
+		- Pulpo Paul: 
+			- Se ingresan los datos de un partido, pulsar el boton de envío se despliega un gif con el resultado.  
+
+	-Mennú desplegable: 
+		- Perfil 
+		- Configuración
+		- Datos de pago. 
+			- Formulario de datos requeridos
+			- Validación.
+			- Una vez validados los datos del usuario se guardan y se muestran, atendiendo a medidas de seguridad. 
+
+		- Ayuda: 
+			- Un encabezado de preguntas frecuentes, preguntas frecuentes y sus respuestas, encabezado de Contacto, datos de contacto. 
+
+		- Términos y condiciones.
+		- Logout.
 
 
 ## <a name="planeacion"></a> Planeación: 
