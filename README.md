@@ -1,9 +1,12 @@
 # WinRussia # 
+<img src=assets/images/logo-horizontal.png>
+
 ### Versión 1.0
 
 
 ## Tabla de Contenido
 1. [Descripción](#descripcion)
+2. [Requerimiento cliente](#requerimiento)
 2. [Planeación](#planeacion)
 3. [Sketching de Vistas](#sketching)
     1. [Login](#sketch-login)
@@ -13,29 +16,28 @@
     1. [Pseudocodigo](#pseudo)
 
 
-## <a name="descripcion"></a> Descripción: ##
-
-El 
+## <a name="descripcion"></a> Descripción de producto: ##
 
 - Versión 1.0:
 
     - WinRussia es una aplicación móvil de apuestas sobre el Mundial de Rusia 2018. 
 
-- Requerimientos: 
 
-	- Una app confiable donde aficionados al futbol puedan realizar apuestas respecto a los enfrentamientos del torneo. 	
-	- Intezfaz intuitiva y de flujo sencillo, navegación por tabs. 
-	- Espacio para visualizar partidos, fecha y lugares, que este dividido entre los grupos de clasificación y las etapas del torneo. 
-	- Sección para ver "Mis apuestas"
-	- Sección para verificar estadísticas de partidos y jugadores. 
-	- Un lugar de pronosticos aleatorios para hacer más divertida la app (Pulpo Paul). 
-	- Sección para configuracion de preferencias de la app y el perfil. 
-	- Un lugar para validación de dato de TDC. 
-	- Términos y condiciones. 
-    - Navegación complementaria a modo de tutorial para entender el uso de la app.
-    - Acceso a la app a través de Google y/o Facebook.   
-    - Uso de APIs.
-    - Git colaborativo. 
+## <a name="requerimiento"></a> Requerimiento del cliente: 
+
+- Una app confiable donde aficionados al futbol puedan realizar apuestas respecto a los enfrentamientos del torneo. 	
+- Intezfaz intuitiva y de flujo sencillo, navegación por tabs. 
+- Espacio para visualizar partidos, fecha y lugares, que este dividido entre los grupos de clasificación y las etapas del torneo. 
+- Sección para ver "Mis apuestas"
+- Sección para verificar estadísticas de partidos y jugadores. 
+- Un lugar de pronosticos aleatorios para hacer más divertida la app (Pulpo Paul). 
+- Sección para configuracion de preferencias de la app y el perfil. 
+- Un lugar para validación de dato de TDC. 
+- Términos y condiciones. 
+- Navegación complementaria a modo de tutorial para entender el uso de la app.
+- Acceso a la app a través de Google y/o Facebook.   
+- Uso de APIs.
+
 
 - Views: 
 
@@ -69,11 +71,12 @@ El
 
 ## <a name="planeacion"></a> Planeación: 
 
-Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades
+- Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades
+- Utilización de Git Colaborativo.
 
 Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
 
-## <a name="sketching"></a> Sketching ##
+## <a name="sketching"></a> Sketching y descripciones ##
 1.  <a name="sketch-login"></a>**Sketch Login**
     - <img src=assets/images/Sketches/sketch-login.png>
 
