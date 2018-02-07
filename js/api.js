@@ -19,7 +19,6 @@ xhr.onreadystatechange = function(e) {
       var imageAnswer = response.image;
       var answer = document.getElementById('image-answer-container');
       var image = document.getElementById('image-answer').src = imageAnswer;
-      answer.appendChild(image);
 
     }
   }
