@@ -59,17 +59,5 @@ function splash() {
 	 }, 3000);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(loadPage);
+
