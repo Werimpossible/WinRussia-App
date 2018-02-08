@@ -1,5 +1,5 @@
 # WinRussia # 
-### Versión 1.0
+### V1.0.0
 <img src=assets/images/logo-horizontal.png>
 
 
@@ -7,13 +7,13 @@
 1. [Descripción de producto](#descripcion)
 2. [Descripción funcional](#descripcion-func)
 	1. [Navegación](#navegacion)
-3. [Bases del producto](#bases)
+3. [Fundamentos del producto](#fundamentos)
+	1. [Usuario objetivo](#usuario)
+	2. [Research](#research)
+	3. [Problemas a resolver para el usuario](#problemas)
 4. [Planeación ](#planeacion)
-5. [Sketching de Vistas](#sketching)
-    1. [Login](#sketch-login)
-6. [Vistas wireframes](#wireframes)
+5. [Sketching y Wireframes](#sketching)
     1. [Login](#login)
-
 
 
 ## <a name="descripcion"></a> Descripción de producto:
@@ -43,42 +43,43 @@
 	- Arquitectura de la información simple y clara para que el usuario pueda encontrar con facilidad lo que necesita.
 
 
-## <a name="bases"></a> Base del producto:
+## <a name="fundamentos"></a> Fundamentos del producto:
 
-Realizando un sondeo entre conocidos y amigos notamos que una forma a la que las personas más recurren para esparcimiento es el uso de aplicaciones móviles, los deportes y las apuestas. Por lo que surgió la idea de conjuntar estas 3 opciones en un producto: WinRussia, como una alternativa de producto digital innovador y entretenido. Una aplicación móvil para realizar apuestas sobre los partidos que se disputarán en la siguiente copa mundial de fútbol.
-
-- Versión 1.0:
-
-    - WinRussia es una aplicación móvil de apuestas sobre el Mundial de Rusia 2018. 
-
+- ## <a name="usuario"></a> Usuario Objetivo:
+	- Hombres y mujeres a partir de 18 años.
+	- Interesados en los deportes y pronosticos.
+	- Gustan de apostar.
 
 
+- ## <a name="research"></a> Research:
+	- Herramienta utilizada: Entrevista a profundidad a 6 personas con el perfil 
+	- Datos recabados que fundamentan el producto:
+		-Los usuarios potenciales ya tiene experiencia en apostar, sin embargo, lo hacen primordialmente con eventos deportivos grandes.
+		-Para realiza sus apuestas suelen utilizar sitios que solo pueden ver en versión escritorio, lo que les hace dar mas pasos para poder apostar.
+		-Muchos de ellos utilizan y saben de estadisticas generales del evento al que apuestan, por lo que les es muy necesario tener esta información.
 
-
+- ### <a name="problemas"></a> Problemas a Resolver para el usuarios:
+	- Facilitar al usuario que en el menor numero de pulsaciones, logré llevarlo al sitio de apuestas.
+	- Facilidad de manejo de datos de equipos y estadisticas para que el usuario la entienda e interactúe con ellas.
 
 ## <a name="planeacion"></a> Planeación: 
 
-Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades. 
+Utilización de Trello y Git Proyects dentro de repositorio para control de actividades, resolución de issues, control de commits y desarrollo en conjunto.
 
-Liga del tablero: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
+Liga del tablero de Trello: [Aquí](https://trello.com/b/tEWFmgOW/principal-board)  
 
 ![TrelloView](/assets/images/trello.png)
 
-Atenidendo a las fortalezas de cada una se realizó la siguiente división de trabajo:
+Las tareas, objetivos y milestones de cada etapa del proyecto se definieron por días entre las colaboradoras para agilización de tareas y aprovechamiento de tiempo.
 
-* UX Desing: Ana Laura y Andrea 
-* Front-End: Lili y Jimena
 
-Sin embargo cabe aclarar que todas hemos contribuido de una u otra forma todas las tareas. 
-
-## <a name="sketching"></a> Sketching ##
+## <a name="sketching"></a> Sketching y Wireframes ##
 
 - Views: 
-
 	- Splash.
 	- Inicio de sesión.
 
-1.  <a name="sketch-login"></a>**Sketch Login**
+1.  <a name="login"></a>**Login**
     <img src=assets/images/Sketches/sketch-login.png>
 
 	- Sección principal con menú deslizable de tabs: 
