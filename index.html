@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
+<body class="total">
 
     <section class="container">
 
@@ -29,16 +29,17 @@
                 <img src="assets/images/logo-horizontal.png" alt="" class="responsive-img">
             </div>
             <div class="row">
+              <!-- Correo electrónico y contraseña-->
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s12">
                     <i class="material-icons prefix">email</i>
-                    <input id="icon_prefix" type="email" class="validate">
+                    <input id="login-email" type="email" class="validate">
                     <label for="icon_prefix">Email</label>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">enhanced_encryption</i>
-                    <input id="icon_telephone" type="password" class="validate">
+                    <input id="login-password" type="password" class="validate">
                     <label for="icon_telephone">Password</label>
                   </div>
                 </div>
@@ -47,9 +48,11 @@
                 <button type="button" name="button" id="btn-mail-access" class="btn-access">Log in</button>
               </div>
             </div>
+            <!-- Google-->
             <div class="col s10 offset-s1">
               <button type="button" name="button" id="btn-google" class="btn-access">Sign in with Google</button>
             </div>
+            <!-- Facebook-->
             <div class="col s10 offset-s1">
               <button type="button" name="button" id="btn-facebook" class="btn-access">Sign in with Facebook</button>
             </div>
