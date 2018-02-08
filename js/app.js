@@ -4,7 +4,7 @@ function loadPage(){
   $(".button-collapse").sideNav();
   $('.collapsible').collapsible();
 
-  
+
   splash()
 
   // Initialize Firebase
