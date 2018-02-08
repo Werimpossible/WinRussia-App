@@ -35,7 +35,7 @@ function authentication(provider){
   // The signed-in user info.
   var user = result.user;
   localStorage.setItem("nombre", user.displayName);
-  window.location.href = "index.html";
+  window.location.href = "views/principal.html";
 //  console.log(result);
   // ...
 })
@@ -75,6 +75,8 @@ function authentication(provider){
     var token = result.credential.accessToken;
     // The signed-in user info.
     var user = result.user;
+    localStorage.setItem("nombre", user.displayName);
+    window.location.href = "views/principal.html";
     console.log(user);
     // ...
   }).catch(function(error) {
@@ -89,10 +91,34 @@ function authentication(provider){
   });
 }
 
+    //Botón para ingresar con correo electrónico y contraseña
+    $("#btn-mail-access").click(loginWithMail);
 
 }
 
 
+
+  //Función para ingresar con correo electrónico y contraseña
+function loginWithMail() {
+	var $loginEmail = $("#login-email").val();
+	var $loginPassword = $("#login-password").val();
+
+		firebase.auth().signInWithEmailAndPassword($loginEmail, $loginPassword)
+		.then(function(result){
+			window.location.href = "views/principal.html";
+		})
+		.catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // ...
+	});
+
+}
+
+
+
+// Función splash
 function splash() {
 	setInterval(function() {
 				$("#splash").hide();
