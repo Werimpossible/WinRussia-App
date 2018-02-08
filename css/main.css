@@ -25,11 +25,5 @@ body{
   background-color: #FFF;
   border: solid 3px #f44447;
   border-radius: 1vh;
-}
-
-.account{
-  margin-top: 5vh;
-}
-.account > a{
-  color: #FFF;
+  margin: 3%;
 }
