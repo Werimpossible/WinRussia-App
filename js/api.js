@@ -10,7 +10,6 @@ function UserAction() {
 
 function UserAction() {
 var xhr = new XMLHttpRequest();
-console.log(xhr);
 xhr.onreadystatechange = function(e) {
   if(this.readyState === 4){
     if(this.status === 200){
@@ -27,8 +26,12 @@ xhr.open("GET", "https://yesno.wtf/api/", true);
 //xhr.setRequestHeader("Content-type", "application/json");
 xhr.send();
 
-
 }
+var btnAnswer = document.getElementById('btn-answer-paul');
+btnAnswer.addEventListener("click", UserAction);
+
+
+
 /*
 function UserAction() {
     var xhttp = new XMLHttpRequest();
