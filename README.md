@@ -5,7 +5,8 @@
 
 ## Tabla de Contenido
 1. [Descripción de producto](#descripcion)
-2. [Requerimiento del cliente](#requerimiento)
+2. [Descripción funcional](#descripcion-func)
+	1. [Navegación](#navegacion)
 3. [Bases del producto](#bases)
 4. [Planeación ](#planeacion)
 5. [Sketching de Vistas](#sketching)
@@ -25,20 +26,24 @@
 	- Espacio de perfil de usuario con la opción de iniciar sesión por medio de Facebook o Google y donde podrá ver sus preferencias de equipos y apuestas hechas.
 
 
-## <a name="requerimiento"></a> Requerimiento del cliente: 
+## <a name="descripcion-func"></a> Descripción funcional: 
 
-- Una app confiable donde aficionados al futbol puedan realizar apuestas respecto a los enfrentamientos del torneo.
-- Interfaz intuitiva y de flujo sencillo, para el usuario.
-- Espacio para visualizar partidos, fecha y lugares, que este dividido entre los grupos de clasificación y las etapas del torneo. 
-- Sección para ver "Mis apuestas"
-- Sección para verificar estadísticas de partidos y jugadores. 
-- Un lugar de pronosticos aleatorios para entretenimiento (Pulpo Paul). 
-- Sección para configuracion de preferencias de la app y el perfil. 
-- Un lugar para validación de dato de TDC. 
-- Navegación complementaria a modo de tutorial para entender el uso de la app.
-- Acceso a la app a través de Google y/o Facebook.   
-- Uso de APIs.
-- Términos y condiciones. 
+- Interfaz intuitiva y de flujo sencillo para el usuario dividida en las siguientes vistas por medio de tabs:
+	- Feed principal: Visualización de horarios de partidos.
+	- Sección para ver "Mis apuestas"
+	- Sección para estadísticas de partidos y jugadores.
+	- Un lugar de pronosticos aleatorios para entretenimiento (Pulpo Paul). 
+	- Sección para configuracion de preferencias de la app y el perfil.
+	- Acceso a la app a través de Google y/o Facebook.   
+	- Uso de APIs.
+	- Términos y condiciones. 
+
+- <a name="navegacion"></a> Acerca de la navegación:
+	- **Navegación No Lineal**: Uso de tabs para facilitar la navegación del usuario para que sea consistente y facilmente identificable y que pueda saltar de una sección a otra.
+	- Arquitectura de la información simple y clara para que el usuario pueda encontrar con facilidad lo que necesita.
+
+
+## <a name="bases"></a> Base del producto:
 
 Realizando un sondeo entre conocidos y amigos notamos que una forma a la que las personas más recurren para esparcimiento es el uso de aplicaciones móviles, los deportes y las apuestas. Por lo que surgió la idea de conjuntar estas 3 opciones en un producto: WinRussia, como una alternativa de producto digital innovador y entretenido. Una aplicación móvil para realizar apuestas sobre los partidos que se disputarán en la siguiente copa mundial de fútbol.
 
