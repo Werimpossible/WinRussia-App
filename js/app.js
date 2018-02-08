@@ -1,4 +1,10 @@
 function loadPage(){
+
+  $('ul.tabs').tabs('select_tab', 'tab_id');
+  $(".button-collapse").sideNav();
+  $('.collapsible').collapsible();
+
+
   splash()
 
   // Initialize Firebase
@@ -28,7 +34,8 @@ function authentication(provider){
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  window.location.href = "index.html"
+  localStorage.setItem("nombre", user.displayName);
+  window.location.href = "views/principal.html";
 //  console.log(result);
   // ...
 })
@@ -49,9 +56,69 @@ function authentication(provider){
 }
 
 
+$("#btn-facebook").click(function(e){
+//e.preventDefault();
+authFacebook();
+})
+
+function authFacebook(){
+  var provider = new firebase.auth.FacebookAuthProvider();
+  console.log(provider);
+  authentication(provider);
+}
+
+function authentication(provider){
+  var provider = new firebase.auth.FacebookAuthProvider();
+  provider.addScope("public_profile");
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    localStorage.setItem("nombre", user.displayName);
+    window.location.href = "views/principal.html";
+    console.log(user);
+    // ...
+  }).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+}
+
+    //Botón para ingresar con correo electrónico y contraseña
+    $("#btn-mail-access").click(loginWithMail);
+
 }
 
 
+
+  //Función para ingresar con correo electrónico y contraseña
+function loginWithMail() {
+	var $loginEmail = $("#login-email").val();
+	var $loginPassword = $("#login-password").val();
+
+		firebase.auth().signInWithEmailAndPassword($loginEmail, $loginPassword)
+		.then(function(result){
+			window.location.href = "views/principal.html";
+		})
+		.catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // ...
+	});
+
+}
+
+
+
+// Función splash
 function splash() {
 	setInterval(function() {
 				$("#splash").hide();
@@ -60,4 +127,3 @@ function splash() {
 }
 
 $(document).ready(loadPage);
-

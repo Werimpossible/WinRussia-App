@@ -6,68 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Win Russia</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
   <style>
-    @font-face {
-    font-family: dusha;
-    src: url(../assets/fonts/dusha.ttf);
-    }
 
-    #nav {
-      background-color: #bf161b;
-    }
-
-    .brand-logo {
-      font-family: dusha;
-    }
-
-    #header {
-      box-sizing: border-box;
-      width: 100%;
-    }
-
-    #main {
-      box-sizing: border-box;
-      display: inline-block;
-      width: 100%;
-    }
-
-    #matches {
-      box-sizing: border-box;
-      display: inline-block;
-      padding: 1em;
-      width: 92%;
-    }
-
-    #groups {
-      box-sizing: border-box;
-      display: inline-block;
-      width: 8%;
-    }
-
-    .groups {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-      height: 9vh;
-      padding-top: 4vh;
-    }
-
-    .flag {
-      display: inline-block;
-      height: 3vh;
-    }
-
-    .score-match {
-      border: 1px solid #A8A8A8;
-      margin: 0 1em;
-      padding: 0.2em 0.3em;
-    }
-
-    .team-name {
-      margin: 0 0.4em;
-    }
-
-    .team-list {
-      height: 8vh;
-    }
 
   </style>
 </head>
@@ -88,14 +29,15 @@
 
   <header id="header">
     <ul id="tabs-swipe-demo" class="tabs">
-      <li class="tab col s3"><a class="active" href="#partidos">Partidos</a></li>
+      <li class="tab col s3"><a class="active" href="#matches-general">Partidos</a></li>
       <li class="tab col s3"><a href="#apuestas">Apuestas</a></li>
       <li class="tab col s3"><a href="#pulpo-paul">Pulpo Paul</a></li>
       <li class="tab col s3"><a href="#estadisticas">Estadísticas</a></li>
     </ul>
   </header>
 
-  <main id="main">
+  <main id="main-matches">
+    <div id="matches-general">
       <section id="matches" class="">
         <div class="group-matches">
           <h5>GRUPO A</h5>
@@ -1978,6 +1920,7 @@
               </div>
             </li>
           </ul>          
+
         </div>
       </section>
 
@@ -1991,12 +1934,29 @@
         <div class="groups"><a href="#group-G">G</a></div>
         <div class="groups"><a href="#group-H">H</a></div>
       </aside>
-
     </div>
 
     <div id="apuestas" class="col s12">Test 2</div>
-    <div id="pulpo-paul" class="col s12">Test 3</div>
-    <div id="estadisticas" class="col s12">Test 4</div>
+
+
+    <div id="pulpo-paul" class="col s12 center-align">
+      <h5>Pregúntale a Paul</h5>
+      <img src="../assets/images/pulpopaul.png" alt="" class="responsive-img">
+      <div class="row">
+        <div class="col s10 offset-s1">
+              <input id="question-paul" type="text" class="validate" placeholder="Ingresa tu pregunta">
+        </div>
+      </div>
+      <button type="submit" id="btn-answer-paul">RESPUESTA</button>
+      <div id="image-answer-container">
+        <img src="" alt="" id="image-answer">
+      </div>
+    </div>
+
+
+    <div id="estadisticas" class="col s12">
+      <button type="submit" id="btn-statistics">RESPUESTA</button>
+    </div>
   </main>
 
 
@@ -2023,6 +1983,7 @@
 
   <script type="text/javascript" src="../js/app.js"></script>
   <script type="text/javascript" src="../js/api.js"></script>
+  <script type="text/javascript" src="../js/statistics.js"></script>
 
 
 
