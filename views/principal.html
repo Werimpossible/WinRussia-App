@@ -14,33 +14,39 @@
 </head>
 <body>
 
-  <nav id="nav">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Win Russia</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Tarjeta de crédito</a></li>
-        <li><a href="badges.html">Términos y condiciones</a></li>
-        <li><a href="collapsible.html">Cerra sesión</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class= "navbar-fixed">
+    <nav id="nav">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Win Russia</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Perfil</a></li>
+          <li><a href="sass.html">Configuración</a></li>
+          <li><a href="sass.html">Datos de Pago</a></li>
+          <li><a href="sass.html">Ayuda</a></li>
+          <li><a href="badges.html">Términos y condiciones</a></li>
+          <li><a href="collapsible.html">Cerra sesión</a></li>
+        </ul>
+      </div>
+      <header id="header">
+        <ul id="tabs-swipe-demo" class="tabs">
+          <li class="tab col s3"><a class="active" href="#matches-general">Partidos</a></li>
+          <li class="tab col s3"><a href="#apuestas">Apuestas</a></li>
+          <li class="tab col s3"><a href="#pulpo-paul">Pulpo Paul</a></li>
+          <li class="tab col s3"><a href="#estadisticas">Estadísticas</a></li>
+        </ul>
+      </header>  
+    </nav>  
+  </div>
 
 
-  <header id="header">
-    <ul id="tabs-swipe-demo" class="tabs">
-      <li class="tab col s3"><a class="active" href="#matches-general">Partidos</a></li>
-      <li class="tab col s3"><a href="#apuestas">Apuestas</a></li>
-      <li class="tab col s3"><a href="#pulpo-paul">Pulpo Paul</a></li>
-      <li class="tab col s3"><a href="#estadisticas">Estadísticas</a></li>
-    </ul>
-  </header>
+  
 
   <main id="main-matches">
     <div id="matches-general">
       <section id="matches" class="">
         <div class="group-matches">
-          <h5>GRUPO A</h5>
+          <h5 id="group-A">GRUPO A</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
@@ -275,7 +281,7 @@
               </div>
             </li>
           </ul>
-          <h5>GRUPO B</h5>
+          <h5 id="group-B">GRUPO B</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
@@ -510,29 +516,29 @@
               </div>
             </li>
           </ul>  
-          <h5>GRUPO C</h5>
+          <h5 id="group-C">GRUPO C</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
+                    <img src="../assets/images/flags/077-france.png" alt="" class="flag">
                     <span class="team1 team-name">Francia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
                     <span class="team2 team-name">Australia</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <img src="../assets/images/flags/130-australia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body ">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Kazán Arena <br> Kazán </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 16/06/18 <br> Hora: 13:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -541,7 +547,7 @@
                   <div class="input-field row">
                     <center>
                       <input id="bet" type="bet" class="validate" placeholder="$">                     
-                      <span>MX</span>
+                      <span class="grey-text">MX</span>
                     </center>                   
                   </div>
                   <div class="row">
@@ -555,23 +561,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/074-peru.png" alt="" class="flag">
+                    <span class="team1 team-name">Perú</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Dinamarca</span>
+                    <img src="../assets/images/flags/072-denmark.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Mordovia Arena <br> Saransk </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 16/06/18 <br> Hora: 19:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -594,23 +600,101 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/077-france.png" alt="" class="flag">
+                    <span class="team1 team-name">Francia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Perú</span>
+                    <img src="../assets/images/flags/074-peru.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>   Ekaterimburgo Arena  <br> Ekaterimburgo </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 22/06/18 <br> Hora: 17:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/072-denmark.png" alt="" class="flag">
+                    <span class="team1 team-name">Dinamarca</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">Autralia</span>
+                    <img src="../assets/images/flags/130-australia.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Samara Arena <br> Samara </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 21/06/18 <br> Hora: 19:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/072-denmark.png" alt="" class="flag">
+                    <span class="team1 team-name">Dinamarca</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">Francia</span>
+                    <img src="../assets/images/flags/077-france.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p>   Estadio Olímpico Luzhnikí <br> Moscú </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 26/06/18 <br> Hora: 17:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -634,11 +718,11 @@
                 <div class="row">
                   <div class="col s12 valign-wrapper">
                     <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <span class="team1 team-name">Australia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
+                    <span class="team2 team-name">Perú</span>
                     <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
                   </div>
                 </div>
@@ -646,88 +730,10 @@
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>   Estadio Fisht <br> Sochi </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
-                  </div>
-                </div>
-                <div>                  
-                </div class="row container">
-                  <center><p>Ingresa tu apuesta:</p></center>
-                  <div class="input-field row">
-                    <center>
-                      <input id="bet" type="bet" class="validate" placeholder="$">                     
-                      <span>MX</span>
-                    </center>                   
-                  </div>
-                  <div class="row">
-                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
-                  </div>                  
-              </div>
-            </li>
-          </ul>
-          <ul class="collapsible" data-collapsible="accordion">
-            <li>
-              <div class="collapsible-header team-list">
-                <div class="row">
-                  <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
-                    <span class="score-match">0</span>
-                    <span class=""> - </span>
-                    <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
-                  </div>
-                </div>
-              </div>
-              <div class="collapsible-body">
-                <div class="row red darken-4 white-text">
-                  <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
-                  </div>
-                  <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
-                  </div>
-                </div>
-                <div>                  
-                </div class="row container">
-                  <center><p>Ingresa tu apuesta:</p></center>
-                  <div class="input-field row">
-                    <center>
-                      <input id="bet" type="bet" class="validate" placeholder="$">                     
-                      <span>MX</span>
-                    </center>                   
-                  </div>
-                  <div class="row">
-                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
-                  </div>                  
-              </div>
-            </li>
-          </ul>
-          <ul class="collapsible" data-collapsible="accordion">
-            <li>
-              <div class="collapsible-header team-list">
-                <div class="row">
-                  <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
-                    <span class="score-match">0</span>
-                    <span class=""> - </span>
-                    <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
-                  </div>
-                </div>
-              </div>
-              <div class="collapsible-body">
-                <div class="row red darken-4 white-text">
-                  <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
-                  </div>
-                  <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 26/06/18 <br> Hora: 17:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -745,29 +751,29 @@
               </div>
             </li>
           </ul> 
-          <h5>GRUPO D</h5>
+          <h5 id="group-D">GRUPO D</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/064-argentina.png" alt="" class="flag">
+                    <span class="team1 team-name">Argentina</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Islandia</span>
+                    <img src="../assets/images/flags/041-iceland.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>   Otkrytie Arena <br> Moscú </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 16/06/18 <br> Hora: 16:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -790,23 +796,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/134-croatia.png" alt="" class="flag">
+                    <span class="team1 team-name">Croacia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Nigeria</span>
+                    <img src="../assets/images/flags/010-nigeria.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>   Arena Baltika <br> Kaliningrado </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 16/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -829,23 +835,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/064-argentina.png" alt="" class="flag">
+                    <span class="team1 team-name">Argentina</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Croacia</span>
+                    <img src="../assets/images/flags/134-croatia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Estadio de Nizhni Nóvgorod <br> Nizhni Nóvgorod </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p>21/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -868,23 +874,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/010-nigeria.png" alt="" class="flag">
+                    <span class="team1 team-name">Nigeria</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Islandia</span>
+                    <img src="../assets/images/flags/041-iceland.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>Volgogrado Arena <br> Volgogrado </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p>22/06/18 <br> Hora: 18:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -907,23 +913,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/010-nigeria.png" alt="" class="flag">
+                    <span class="team1 team-name">Nigeria</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Argentina</span>
+                    <img src="../assets/images/flags/064-argentina.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>Zenit Arena <br> San Petersburgo </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 26/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -946,23 +952,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/041-iceland.png" alt="" class="flag">
+                    <span class="team1 team-name">Islandia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Croacia</span>
+                    <img src="../assets/images/flags/134-croatia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>Rostov Arena <br> Rostov del Don </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 26/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -980,29 +986,29 @@
               </div>
             </li>
           </ul>
-          <h5>GRUPO E</h5>
+          <h5 id="group-E">GRUPO E</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/131-costa-rica.png" alt="" class="flag">
+                    <span class="team1 team-name">Costa Rica</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Serbia</span>
+                    <img src="../assets/images/flags/035-serbia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Samara Arena <br> Samara </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 17/06/18 <br> Hora: 16:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1025,23 +1031,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/250-brazil.png" alt="" class="flag">
+                    <span class="team1 team-name">Brasil</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Suiza</span>
+                    <img src="../assets/images/flags/097-switzerland.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Rostov Arena <br> Rostov del Don </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 17/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1064,23 +1070,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/250-brazil.png" alt="" class="flag">
+                    <span class="team1 team-name">Brasil</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Costa Rica</span>
+                    <img src="../assets/images/flags/131-costa-rica.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Zenit Arena <br> San Petersburgo </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 22/06/18 <br> Hora: 15:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1103,23 +1109,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/035-serbia.png" alt="" class="flag">
+                    <span class="team1 team-name">Serbia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Suiza</span>
+                    <img src="../assets/images/flags/097-switzerland.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body ">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Arena Baltika <br> Kaliningrado </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 22/06/18 <br> Hora: 20:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1142,23 +1148,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/035-serbia.png" alt="" class="flag">
+                    <span class="team1 team-name">Serbia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Brasil</span>
+                    <img src="../assets/images/flags/250-brazil.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Otkrytie Arena <br> Moscú </p>                  
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 27/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1181,23 +1187,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/097-switzerland.png" alt="" class="flag">
+                    <span class="team1 team-name">Suiza</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Costa Rica</span>
+                    <img src="../assets/images/flags/131-costa-rica.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>Estadio de Nizhni Nóvgorod <br> Nizhni Nóvgorod </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 27/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1215,29 +1221,29 @@
               </div>
             </li>
           </ul>
-          <h5>GRUPO F</h5>
+          <h5 id="group-F">GRUPO F</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/066-germany.png" alt="" class="flag">
+                    <span class="team1 team-name">Alemania</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">México</span>
+                    <img src="../assets/images/flags/239-mexico.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>Estadio Olímpico Luzhnikí <br> Moscú </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 17/06/18 <br> Hora: 18:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1260,23 +1266,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/073-sweden.png" alt="" class="flag">
+                    <span class="team1 team-name">Suecia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Corea del Sur</span>
+                    <img src="../assets/images/flags/055-south-korea.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>Estadio de Nizhni Nóvgorod <br> Nizhni Nóvgorod </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 18/06/18 <br> Hora: 15:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1299,23 +1305,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/066-germany.png" alt="" class="flag">
+                    <span class="team1 team-name">Alemania</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Suecia</span>
+                    <img src="../assets/images/flags/073-sweden.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Estadio Fisht <br> Sochi </p>                  
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 23/06/18 <br> Hora: 18:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1338,23 +1344,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/055-south-korea.png" alt="" class="flag">
+                    <span class="team1 team-name">Corea del Sur</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">México</span>
+                    <img src="../assets/images/flags/239-mexico.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Rostov Arena <br> Rostov del Don </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 23/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1377,23 +1383,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/055-south-korea.png" alt="" class="flag">
+                    <span class="team1 team-name">Corea del Sur</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Alemania</span>
+                    <img src="../assets/images/flags/066-germany.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Kazán Arena  <br> Kazán </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 27/06/18 <br> Hora: 17:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1416,23 +1422,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/239-mexico.png" alt="" class="flag">
+                    <span class="team1 team-name">México</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Suecia</span>
+                    <img src="../assets/images/flags/073-sweden.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body ">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Ekaterimburgo Arena <br> Ekaterimburgo </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 27/06/18 <br> Hora: 19:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1450,29 +1456,29 @@
               </div>
             </li>
           </ul>
-          <h5>GRUPO G</h5>
+          <h5 id="group-G">GRUPO G</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/054-belgium.png" alt="" class="flag">
+                    <span class="team1 team-name">Bélgica</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Panamá</span>
+                    <img src="../assets/images/flags/047-panama.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Estadio Fisht  <br> Sochi </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 18/06/18 <br> Hora: 18:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1495,23 +1501,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/013-tunisia.png" alt="" class="flag">
+                    <span class="team1 team-name">Túnez</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Inglaterra</span>
+                    <img src="../assets/images/flags/152-england.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Volgogrado Arena <br> Volgogrado </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 18/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1534,23 +1540,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/054-belgium.png" alt="" class="flag">
+                    <span class="team1 team-name">Bélgica</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Túnez</span>
+                    <img src="../assets/images/flags/013-tunisia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Otkrytie Arena <br> Moscú </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 23/06/18 <br> Hora: 15:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1573,23 +1579,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/152-england.png" alt="" class="flag">
+                    <span class="team1 team-name">Inglaterra</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Panamá</span>
+                    <img src="../assets/images/flags/047-panama.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p>   Estadio de Nizhni Nóvgorod <br> Nizhni Nóvgorod </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 24/06/18 <br> Hora: 15:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1612,23 +1618,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/152-england.png" alt="" class="flag">
+                    <span class="team1 team-name">Inglaterra</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Bélgica</span>
+                    <img src="../assets/images/flags/054-belgium.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Arena Baltika <br> Kaliningrado </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 28/06/18 <br> Hora: 20:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1651,23 +1657,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/047-panama.png" alt="" class="flag">
+                    <span class="team1 team-name">Panamá</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Túnez</span>
+                    <img src="../assets/images/flags/013-tunisia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Mordovia Arena <br> Saransk </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 28/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1685,29 +1691,29 @@
               </div>
             </li>
           </ul>
-          <h5>GRUPO H</h5>
+          <h5 id="group-H">GRUPO H</h5>
           <ul class="collapsible" data-collapsible="accordion">
             <li>
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/108-poland.png" alt="" class="flag">
+                    <span class="team1 team-name">Polonia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Senegal</span>
+                    <img src="../assets/images/flags/259-senegal.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Otkrytie Arena <br> Moscú </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 19/06/18 <br> Hora: 15:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1730,23 +1736,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/062-colombia.png" alt="" class="flag">
+                    <span class="team1 team-name">Colombia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Japón</span>
+                    <img src="../assets/images/flags/033-japan.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Mordovia Arena <br> Saransk </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 19/06/18 <br> Hora: 18:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1769,23 +1775,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/033-japan.png" alt="" class="flag">
+                    <span class="team1 team-name">Japón</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Senegal</span>
+                    <img src="../assets/images/flags/259-senegal.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Ekaterimburgo Arena <br> Ekaterimburgo </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 24/06/18 <br> Hora: 20:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1808,23 +1814,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/108-poland.png" alt="" class="flag">
+                    <span class="team1 team-name">Polonia</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Colombia</span>
+                    <img src="../assets/images/flags/062-colombia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Kazán Arena <br> Kazán </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 24/06/18<br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1847,23 +1853,23 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/033-japan.png" alt="" class="flag">
+                    <span class="team1 team-name">Japón</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Polonia</span>
+                    <img src="../assets/images/flags/108-poland.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Volgogrado Arena <br> Volgogrado </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 28/06/18 <br> Hora: 17:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1886,23 +1892,102 @@
               <div class="collapsible-header team-list">
                 <div class="row">
                   <div class="col s12 valign-wrapper">
-                    <img src="../assets/images/flags/001-ethiopia.png" alt="" class="flag">
-                    <span class="team1 team-name">Team1</span>
+                    <img src="../assets/images/flags/259-senegal.png" alt="" class="flag">
+                    <span class="team1 team-name">Senegal</span>
                     <span class="score-match">0</span>
                     <span class=""> - </span>
                     <span class="score-match">0</span>
-                    <span class="team2 team-name">Team2</span>
-                    <img src="../assets/images/flags/002-oman.png" alt="" class="flag">
+                    <span class="team2 team-name">Colombia</span>
+                    <img src="../assets/images/flags/062-colombia.png" alt="" class="flag">
                   </div>
                 </div>
               </div>
               <div class="collapsible-body">
                 <div class="row red darken-4 white-text">
                   <div class="col s6">
-                    <p>Estadio <br> Ciudad </p>                    
+                    <p> Samara Arena <br> Samara </p>                    
                   </div>
                   <div class="col s6">
-                    <p>Día/Mes/Año <br> Hora: 00:00 hrs </p>                                       
+                    <p> 28/06/18 <br> Hora: 18:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <h5 id="group-8">Octavos de Final</h5>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° C</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2°D.</span>
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Kazán Arena <br> Kazán </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p>30/06/18 <br> Hora: 17:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° A</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° B</span>
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Estadio Fisht <br> Sochi </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 30/06/18 <br> Hora: 21:00 hrs </p>                                       
                   </div>
                 </div>
                 <div>                  
@@ -1920,7 +2005,240 @@
               </div>
             </li>
           </ul>          
-
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° B</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° A</span>
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Estadio Olímpico Luzhnikí <br> Moscú </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 01/07/18 <br> Hora: 17:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° D</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° C</span>
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Estadio de Nizhni Nóvgorod <br> Nizhni Nóvgorod </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 01/07/18 <br> Hora: 21:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° E</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° F</span>
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Samara Arena <br> Samara </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 02/07/18 <br> Hora: 18:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° G</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° H</span>
+                    <img src="../assets/images/flags/t.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Rostov Arena <br> Rostov del Don </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 02/07/18 <br> Hora: 21:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° F</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° E</span>
+                    <img src="../assets/images/flags/t.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Zenit Arena <br> San Petersburgo </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 03/07/18 <br> Hora: 17:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header team-list">
+                <div class="row">
+                  <div class="col s12 valign-wrapper">
+                    <img src="../assets/images/flags/.png" alt="" class="flag">
+                    <span class="team1 team-name">1° H</span>
+                    <span class="score-match">0</span>
+                    <span class=""> - </span>
+                    <span class="score-match">0</span>
+                    <span class="team2 team-name">2° G</span>
+                    <img src="../assets/images/flags/t.png" alt="" class="flag">
+                  </div>
+                </div>
+              </div>
+              <div class="collapsible-body">
+                <div class="row red darken-4 white-text">
+                  <div class="col s6">
+                    <p> Otkrytie Arena <br> Moscú </p>                    
+                  </div>
+                  <div class="col s6">
+                    <p> 03/07/18 <br> Hora: 21:00 hrs </p>                                       
+                  </div>
+                </div>
+                <div>                  
+                </div class="row container">
+                  <center><p>Ingresa tu apuesta:</p></center>
+                  <div class="input-field row">
+                    <center>
+                      <input id="bet" type="bet" class="validate" placeholder="$">                     
+                      <span>MX</span>
+                    </center>                   
+                  </div>
+                  <div class="row">
+                    <center><a class="waves-effect waves-light btn  red accent-4">¡Apuesta!</a></center>                    
+                  </div>                  
+              </div>
+            </li>
+          </ul>       
         </div>
       </section>
 
@@ -1933,6 +2251,10 @@
         <div class="groups"><a href="#group-F">F</a></div>
         <div class="groups"><a href="#group-G">G</a></div>
         <div class="groups"><a href="#group-H">H</a></div>
+        <div class="groups"><a href="#group-8">8vos</a></div>
+        <div class="groups"><a href="#group-4">4tos</a></div>
+        <div class="groups"><a href="#group-S">Semis</a></div>
+        <div class="groups"><a href="#group-Fin">Final</a></div>
       </aside>
     </div>
 
