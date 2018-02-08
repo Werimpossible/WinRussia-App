@@ -13,7 +13,8 @@
 	3. [Problemas a resolver para el usuario](#problemas)
 4. [Planeación ](#planeacion)
 5. [Sketching y Wireframes](#sketching)
-    1. [Login](#login)
+    1. [Splash](#splash)
+	2. [Login](#login)
 
 
 ## <a name="descripcion"></a> Descripción de producto:
@@ -75,13 +76,20 @@ Las tareas, objetivos y milestones de cada etapa del proyecto se definieron por 
 
 ## <a name="sketching"></a> Sketching y Wireframes ##
 
-- Views: 
-	- Splash.
-	- Inicio de sesión.
+- *Lista general de todos los views de WinRussia*:
+	1. Splash.
+	2. Inicio de sesión.
+	3. Feed principal
+	4. Apuestas
+	5. Tabs de pronosticos "Pulpo Paul"
+	6. Estadisticas
 
-1.  <a name="login"></a>**Login**
+1. <a name="splash"></a>**Splash**
+2. <a name="login"></a>**Login**
     <img src=assets/images/Sketches/sketch-login.png>
 
+	- Descripción:
+		- EL usuario podrá iniciar sesión con correo electronico o con su suenta de Google o Facebook.
 	- Sección principal con menú deslizable de tabs: 
 		- Partidos:
 			- Esta sección cuenta de un menú fijo del lado izquierdo con los grupos y las etapas de avance del torneo. 
