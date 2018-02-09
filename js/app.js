@@ -94,17 +94,23 @@ function authenticationFacebook(provider){
 //Función para agregar datos de usuario
 function inizializarFire(){
   firebase.auth().onAuthStateChanged(function(user) {
-    var userPicture = $("user-pic");
-    var userName = $("user-name");
+    var $userPicture = $("user-pic");
+    var $userName = $("user-name");
 
 
     if (user) {
       // User is signed in.
       var displayName = user.displayName;
-      var userPhoto = user.photoURL
+      localStorage.setItem("displayName1", displayName);
+      var userPhoto = user.photoURL;
+      console.log(userPhoto);
+      console.log(displayName);
+      //var $displayName2 = localStorage.getItem(displayName1);
+      //console.log(displayName2);
 
       $userName.textContent = displayName;
-      $userPicture.attr("src", phoyoURL);
+      $userPicture.attr('src', userPhoto);
+
 
     }
   });
