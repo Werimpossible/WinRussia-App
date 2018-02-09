@@ -12,9 +12,6 @@
 	2. [Research](#research)
 	3. [Problemas a resolver para el usuario](#problemas)
 4. [Planeación ](#planeacion)
-5. [Sketching y Wireframes](#sketching)
-    1. [Splash](#splash)
-	2. [Login](#login)
 
 
 ## <a name="descripcion"></a> Descripción de producto:
@@ -85,18 +82,26 @@ Las tareas, objetivos y milestones de cada etapa del proyecto se definieron por 
 	6. Estadisticas
 
 1. <a name="splash"></a>**Splash**
+-	Entrada a la app con splash que incluye el logo de WinRussia.
 2. <a name="login"></a>**Login**
     <img src=assets/images/Sketches/sketch-login.png>
 
+	
+
+
+## <a name="sketching"></a> Sketching y descripciones ##
+1.  <a name="sketch-login"></a>**Sketch Login**
+    - <img src=assets/images/Sketches/sketch-login.png>
 	- Descripción:
-		- EL usuario podrá iniciar sesión con correo electronico o con su suenta de Google o Facebook.
+		- Inicio de sesión por medio de Facebook o Google para que el usuario logre hacerlo mas fácilmente.
+
+2.  <a name="sketch-login"></a>**Sketch Feed**
+    - <img src=assets/images/Sketches/sketch-feed.png>
 	- Sección principal con menú deslizable de tabs: 
 		- Partidos:
-			- Esta sección cuenta de un menú fijo del lado izquierdo con los grupos y las etapas de avance del torneo. 
-			- En el espacio designado podemos visualizar los partidos del grupo o etapa seleccionado. 
-			- Al pulsar en el partido seleccionado, se despliega un toggle con la innformación del partido (Estadio/Ciudad/Fecha/hora) y además cuenta ocn un input para ingreso de monto a apostar, botón de CTA para fijar la apuesta.   
-		- Mis apuestas: 
-			- En este apartado se muestran las últimas apuestas realizadas y sus resultados. 
+			- Menú fijo del lado izquierdo con los grupos y las etapas de avance del torneo. 
+			- Visualización de los partidos del grupo o etapa seleccionados.
+			- Despliegue de toggle con información de cada partido (Estadio/Ciudad/Fecha/hora) con input para ingreso de monto a apostar, botón de CTA para fijar la apuesta.   
 		- Estadísticas (API datos mundial pasado). 
 		- Pulpo Paul: 
 			- Se ingresan los datos de un partido, pulsar el boton de envío se despliega un gif con el resultado (ÄPI de juego YES/NO/MAYBE).  
@@ -104,27 +109,6 @@ Las tareas, objetivos y milestones de cada etapa del proyecto se definieron por 
 		- Perfil. 
 		- Configuración.
 		- Datos de pago. 
-			- Formulario de datos requeridos.
-			- Validación (API Visa).
-			- Una vez validados los datos del usuario se guardan y se muestran, atendiendo a medidas de seguridad. 
-		- Ayuda: 
-			- Un encabezado de preguntas frecuentes, preguntas frecuentes y sus respuestas, encabezado de Contacto, datos de contacto.
 		- Términos y condiciones.
-		- Logout.
+		- Cerrar Sesión.
 
-
-
-- Se utilizó plataforma de Trello para realizar la organización de tiempos y actividades
-- Utilización de Git Colaborativo.
-
-
-## <a name="sketching"></a> Sketching y descripciones ##
-1.  <a name="sketch-login"></a>**Sketch Login**
-    - <img src=assets/images/Sketches/sketch-login.png>
-
-2.  <a name="sketch-login"></a>**Sketch Feed**
-    - <img src=assets/images/Sketches/sketch-feed.png>
-
-## <a name="wireframes"></a> Vistas wireframes Definitivos
-- <a name="login"></a>**Login**
-    - <img src=assets/images/---->
