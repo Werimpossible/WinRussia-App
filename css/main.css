@@ -119,17 +119,15 @@ src: url(../assets/fonts/dusha.ttf);
 
 
 #main-matches{
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
-<<<<<<< HEAD
+
+/*Estilo de apuestas*/
 .bet {
   color: black;
 }
-=======
-.side-nav{
-  
-}
+
 
 
 /*Clases footer Terminos y condiciones*/
@@ -162,4 +160,4 @@ src: url(../assets/fonts/dusha.ttf);
 .team-info span {
   font-size: 0.7em;
 }
->>>>>>> upstream/master
+
