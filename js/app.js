@@ -64,10 +64,10 @@ authFacebook();
 function authFacebook(){
   var provider = new firebase.auth.FacebookAuthProvider();
   console.log(provider);
-  authentication(provider);
+  authenticationFacebook(provider);
 }
 
-function authentication(provider){
+function authenticationFacebook(provider){
   var provider = new firebase.auth.FacebookAuthProvider();
   provider.addScope("public_profile");
   firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -90,6 +90,30 @@ function authentication(provider){
     // ...
   });
 }
+
+//Función para agregar datos de usuario
+function inizializarFire(){
+  firebase.auth().onAuthStateChanged(function(user) {
+    var userPicture = $("user-pic");
+    var userName = $("user-name");
+
+
+    if (user) {
+      // User is signed in.
+      var displayName = user.displayName;
+      var userPhoto = user.photoURL
+
+      $userName.textContent = displayName;
+      $userPicture.attr("src", phoyoURL);
+
+    }
+  });
+  }
+//window.onload = function(){
+  inizializarFire()
+//}
+
+
 
     //Botón para ingresar con correo electrónico y contraseña
     $("#btn-mail-access").click(loginWithMail);
@@ -115,6 +139,43 @@ function loginWithMail() {
 	});
 
 }
+
+
+//**************---------- APIS FUNCTIONS ---------**************
+
+//API https://yesno.wtf/
+
+
+
+function questionPaul() {
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function(e) {
+  if(this.readyState === 4){
+    if(this.status === 200){
+      var response = JSON.parse(this.response);
+
+      var imageAnswer = response.image;
+      var answer = document.getElementById('image-answer-container');
+      var image = document.getElementById('image-answer').src = imageAnswer;
+
+    }
+  }
+}
+xhr.open("GET", "https://yesno.wtf/api/", true);
+//xhr.setRequestHeader("Content-type", "application/json");
+xhr.send();
+
+}
+$("#btn-answer-paul").click(questionPaul)
+
+
+
+
+
+
+
+
+//**************---------- FIN APIS FUNCTIONS ---------**************
 
 
 
