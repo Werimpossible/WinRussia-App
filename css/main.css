@@ -96,6 +96,7 @@ src: url(../assets/fonts/dusha.ttf);
   height: 8vh;
 }
 
+
 /*Estilos 3er tab PULPO PAUL*/
 #question-paul {
   font-size: 1.5em;
@@ -115,7 +116,14 @@ src: url(../assets/fonts/dusha.ttf);
   color: #bf161b;
 }
 
+/*Clases footer Terminos y condiciones*/
+.terms{
+  padding: 2em;
+}
+.acepto-fondo{
+  background-color: #bf161b;
+}
 
-#btn-mail-access:hover{
-  
+.acepto-btn{
+  background: #f44447;
 }
