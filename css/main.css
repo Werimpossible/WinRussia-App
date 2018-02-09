@@ -69,8 +69,9 @@ src: url(../assets/fonts/dusha.ttf);
   box-sizing: border-box;
   display: inline-block;
   width: 8%;
+  position: fixed;
 }
-
+ 
 .groups {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   height: 9vh;
@@ -113,4 +114,12 @@ src: url(../assets/fonts/dusha.ttf);
   border: 1px solid #bf161b;
   border-radius: 5px;
   color: #bf161b;
+}
+
+#main-matches{
+  margin-top: 12%;
+}
+
+.side-nav{
+  
 }
