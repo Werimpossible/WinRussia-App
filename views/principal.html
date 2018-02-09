@@ -17,6 +17,10 @@
       <a href="#!" class="brand-logo">Win Russia</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="side-nav" id="mobile-demo">
+        <li><div class="user-view">
+        <a href="#!user"><img id="user-pic" class="circle" src="http://dummyimage.com/100X100"></a>
+        <a href="#!name"><span id="user-name" class="black-text name">Jimena Barrán</span></a>      
+        </div></li>
         <li><a href="sass.html">Tarjeta de crédito</a></li>
         <li><a href="badges.html" >Términos y condiciones</a></li>
         <li><a href="collapsible.html">Cerrar sesión</a></li>
@@ -2252,22 +2256,8 @@
 <!-- 2DA TAB -->
     <div id="apuestas" class="col s12">
       <div class="container">
-        <script src="https://js.stripe.com/v3/"></script>
-          <form action="/charge" method="post" id="payment-form">
-            <div class="form-row">
-              <label for="card-element">
-                Credit or debit card
-              </label>
-              <div id="card-element">
-                <!-- a Stripe Element will be inserted here. -->
-              </div>
 
-              <!-- Used to display form errors -->
-              <div id="card-errors" role="alert"></div>
-            </div>
 
-            <button>Submit Payment</button>
-          </form>
       </div>
     </div>
 
@@ -2315,6 +2305,7 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 
 
 

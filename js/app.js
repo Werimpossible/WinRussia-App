@@ -64,10 +64,10 @@ authFacebook();
 function authFacebook(){
   var provider = new firebase.auth.FacebookAuthProvider();
   console.log(provider);
-  authentication(provider);
+  authenticationFacebook(provider);
 }
 
-function authentication(provider){
+function authenticationFacebook(provider){
   var provider = new firebase.auth.FacebookAuthProvider();
   provider.addScope("public_profile");
   firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -90,6 +90,30 @@ function authentication(provider){
     // ...
   });
 }
+
+//Función para agregar datos de usuario
+function inizializarFire(){
+  firebase.auth().onAuthStateChanged(function(user) {
+    var userPicture = $("user-pic");
+    var userName = $("user-name");
+
+
+    if (user) {
+      // User is signed in.
+      var displayName = user.displayName;
+      var userPhoto = user.photoURL
+
+      $userName.textContent = displayName;
+      $userPicture.attr("src", phoyoURL);
+
+    }
+  });
+  }
+//window.onload = function(){
+  inizializarFire()
+//}
+
+
 
     //Botón para ingresar con correo electrónico y contraseña
     $("#btn-mail-access").click(loginWithMail);
@@ -121,6 +145,8 @@ function loginWithMail() {
 
 //API https://yesno.wtf/
 
+
+
 function questionPaul() {
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function(e) {
@@ -140,8 +166,8 @@ xhr.open("GET", "https://yesno.wtf/api/", true);
 xhr.send();
 
 }
-var btnAnswer = document.getElementById('btn-answer-paul');
-btnAnswer.addEventListener("click", questionPaul);
+$("#btn-answer-paul").click(questionPaul)
+
 
 
 
@@ -150,62 +176,7 @@ btnAnswer.addEventListener("click", questionPaul);
 
 
 //**************---------- FIN APIS FUNCTIONS ---------**************
-var stripe = Stripe('pk_test_IAfkZML5suOBMwsgaeELNhpt');
 
-// Create an instance of Elements
-var elements = stripe.elements();
-
-// Custom styling can be passed to options when creating an Element.
-// (Note that this demo uses a wider set of styles than the guide below.)
-var style = {
-  base: {
-    color: '#32325d',
-    lineHeight: '18px',
-    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-    fontSmoothing: 'antialiased',
-    fontSize: '16px',
-    '::placeholder': {
-      color: '#aab7c4'
-    }
-  },
-  invalid: {
-    color: '#fa755a',
-    iconColor: '#fa755a'
-  }
-};
-
-// Create an instance of the card Element
-var card = elements.create('card', {style: style});
-
-// Add an instance of the card Element into the `card-element` <div>
-card.mount('#card-element');
-
-// Handle real-time validation errors from the card Element.
-card.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
-  if (event.error) {
-    displayError.textContent = event.error.message;
-  } else {
-    displayError.textContent = '';
-  }
-});
-
-// Handle form submission
-var form = document.getElementById('payment-form');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  stripe.createToken(card).then(function(result) {
-    if (result.error) {
-      // Inform the user if there was an error
-      var errorElement = document.getElementById('card-errors');
-      errorElement.textContent = result.error.message;
-    } else {
-      // Send the token to your server
-      stripeTokenHandler(result.token);
-    }
-  });
-});
 
 
 // Función splash
