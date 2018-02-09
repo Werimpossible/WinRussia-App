@@ -7,10 +7,8 @@
   <title>Win Russia</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
-  <style>
 
 
-  </style>
 </head>
 <body>
 
@@ -2251,10 +2249,30 @@
         <div class="groups"><a href="#group-Fin">Final</a></div>
       </aside>
     </div>
+<!-- 2DA TAB -->
+    <div id="apuestas" class="col s12">
+      <div class="container">
+        <script src="https://js.stripe.com/v3/"></script>
+          <form action="/charge" method="post" id="payment-form">
+            <div class="form-row">
+              <label for="card-element">
+                Credit or debit card
+              </label>
+              <div id="card-element">
+                <!-- a Stripe Element will be inserted here. -->
+              </div>
 
-    <div id="apuestas" class="col s12">Test 2</div>
+              <!-- Used to display form errors -->
+              <div id="card-errors" role="alert"></div>
+            </div>
+
+            <button>Submit Payment</button>
+          </form>
+      </div>
+    </div>
 
 
+<!-- 3RA TAB -->
     <div id="pulpo-paul" class="col s12 center-align">
       <h5>Pregúntale a Paul</h5>
       <img src="../assets/images/pulpopaul.png" alt="" class="responsive-img">
@@ -2269,7 +2287,7 @@
       </div>
     </div>
 
-
+<!-- 4TA TAB -->
     <div id="estadisticas" class="col s12">
       <button type="submit" id="btn-statistics">Ver todas las estadíticas</button>
       <div id="teams-container" class="center-align container"></div>
@@ -2297,6 +2315,9 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
 
   <script type="text/javascript" src="../js/app.js"></script>
   <script type="text/javascript" src="../js/api.js"></script>
