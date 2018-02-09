@@ -124,8 +124,15 @@ src: url(../assets/fonts/dusha.ttf);
 
 
 .side-nav{
-
+  margin-top: 1%;
 }
+
+
+/*Estilo de apuestas*/
+.bet {
+  color: black;
+}
+
 
 
 /*Clases footer Terminos y condiciones*/
