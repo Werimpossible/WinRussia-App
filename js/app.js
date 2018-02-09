@@ -117,6 +117,41 @@ function loginWithMail() {
 }
 
 
+//**************---------- APIS FUNCTIONS ---------**************
+
+//API https://yesno.wtf/
+
+function questionPaul() {
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function(e) {
+  if(this.readyState === 4){
+    if(this.status === 200){
+      var response = JSON.parse(this.response);
+
+      var imageAnswer = response.image;
+      var answer = document.getElementById('image-answer-container');
+      var image = document.getElementById('image-answer').src = imageAnswer;
+
+    }
+  }
+}
+xhr.open("GET", "https://yesno.wtf/api/", true);
+//xhr.setRequestHeader("Content-type", "application/json");
+xhr.send();
+
+}
+var btnAnswer = document.getElementById('btn-answer-paul');
+btnAnswer.addEventListener("click", questionPaul);
+
+
+
+
+
+
+
+//**************---------- FIN APIS FUNCTIONS ---------**************
+
+
 
 // Función splash
 function splash() {

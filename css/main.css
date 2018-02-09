@@ -117,5 +117,22 @@ src: url(../assets/fonts/dusha.ttf);
 
 
 #btn-mail-access:hover{
-  
+
+}
+
+/*Estilos 4ta tab ESTADISTICAS*/
+.team-info .col {
+  border-bottom: 0.5px solid red;
+}
+
+.team-info .row {
+  margin: 0;
+}
+
+.team-info h6{
+  display: inline-block;
+}
+
+.team-info span {
+  font-size: 0.7em;
 }
