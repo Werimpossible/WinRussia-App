@@ -1,5 +1,5 @@
 .total{
-  background-color: #bf161b;
+  background-color:white;
 }
 
 /*Tipografía oficial*/
@@ -28,7 +28,7 @@ src: url(../assets/fonts/dusha.ttf);
   width: 100%;
   height: 5vh;
   box-shadow: 3px 3px #ede8e8;
-  background-color: #FFF;
+  background-color: rgb(255, 255, 255);
   border: solid 3px #f44447;
   border-radius: 1vh;
   margin: 3%;
@@ -119,6 +119,7 @@ src: url(../assets/fonts/dusha.ttf);
 /*Clases footer Terminos y condiciones*/
 .terms{
   padding: 2em;
+  text-align: justify;
 }
 .acepto-fondo{
   background-color: #bf161b;
