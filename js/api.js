@@ -12,6 +12,7 @@ function statisticsData(){
                 var goalsAgainst = team["goals_against"];
                 var goalDifferential = team["goal_differential"];
                 printStatistics(country, wins, draws, losses, games, points, goalsFor, goalsAgainst, goalDifferential);
+                drawChart(country, wins);
             });
 
     });
@@ -118,5 +119,31 @@ function printStatistics(country, wins, draws, losses, games, points, goalsFor, 
 
   $("#teams-container").append($team);
 
-
 }
+
+
+//**************---------- GRÁFICA ---------**************
+
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart(country, wins) {
+
+  var data = google.visualization.arrayToDataTable([
+    ['País', 'Goles'],
+    [country, wins]
+  ]);
+
+  var options = {
+    chart: {
+      title: 'Número de goles',
+      subtitle: 'Mundial 2014',
+    }
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+
+//**************---------- FIN GRÁFICA ---------**************
