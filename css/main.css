@@ -119,9 +119,14 @@ src: url(../assets/fonts/dusha.ttf);
 
 
 #main-matches{
-  margin-top: 12%;
+  margin-top: 5%;
 }
 
+<<<<<<< HEAD
+.bet {
+  color: black;
+}
+=======
 .side-nav{
   
 }
@@ -157,3 +162,4 @@ src: url(../assets/fonts/dusha.ttf);
 .team-info span {
   font-size: 0.7em;
 }
+>>>>>>> upstream/master
