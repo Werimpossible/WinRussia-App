@@ -1,6 +1,6 @@
 # WinRussia # 
 ### V1.0.0
-<img src=assets/images/logo-horizontal.png>
+![logo-horizontal](https://user-images.githubusercontent.com/30583011/38583082-7495bf06-3cd7-11e8-8ab7-c0f3ab4a34ce.png)
 
 ## Tabla de Contenido
 1. [Descripción de producto](#descripcion)
